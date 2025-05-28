@@ -1,0 +1,75 @@
+INSERT INTO product (
+    id, thumbnail, additional_images, title, price, currency, average_rating,
+    description, how_to_use, ingredient_benefits, full_ingredients_list,
+    skincare_concerns, createdAt, total_quantity, is_deleted
+) VALUES
+-- 1
+('5b9cd17f-ee71-42a7-8060-0e269811e485',
+'https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/14512726-3655063333081784.jpg&format=webp&auto=avif&width=640&height=640&fit=crop',
+'{}',
+'Glow Hub The Scar Slayer Facial Serum 30ml',
+14, 'POUND', 0,
+'Ideal for those prone to breakouts and blemishes, Glow Hub’s Scar Slayer is an acid-infused serum that promotes a more balanced and unified-looking skin tone.\nRich in tranexamic acid, the formula helps to visibly diminish discolouration and textural irregularities to encourage a brighter and more even-looking result. Vitamin C provides antioxidant protection, while probiotics support the serum to promote a strong skin barrier appearance.',
+'☼ AM / ☽ PM\nRecommended Amount: 3-4 drops.\nWhen to Use: After cleansing.\nApplication: Apply to clean, dry skin.',
+'Tranexamic Acid: An acid that helps to even the look of discolouration\nVitamin C: A potent antioxidant with brightening properties\nProbiotics: Live bacteria that form part of the skin''s microbiome',
+'Aqua (Water), Propylene Glycol, Glycerin, Tranexamic Acid, 3-O-Ethyl Ascorbic Acid, Tocopheryl Acetate, Lactobacillus Ferment, Citric Acid, Sodium Benzoate, Polyacrylate Crosspolymer-6, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Potassium Sorbate, Sodium Gluconate, Maltodextrin',
+'{ACNE_BLEMISHES,BLACKHEADS_PORES}',
+'2025-05-28 02:17:42.467',
+357, false),
+
+-- 2
+('063bd936-6565-454c-b353-523287bc2a6a',
+'https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11795633-2925208759873822.jpg&format=webp&auto=avif&width=640&height=640&fit=crop',
+'{}',
+'Medik8 Blemish Control Pads (60 Pads)',
+30, 'POUND', 0,
+'Smoother skin awaits with Medik8’s Blemish Control Pads. Pre-soaked with a blend of maximum-strength salicylic acid, allantoin and glycerin, the potent pads help to visibly refine and brighten, resulting in a clearer-looking complexion.\nPerfect for blemish-prone skin types, the pads sweep across your base helping to minimise the appearance of pores and excess oil, while encouraging a smooth and supple finish.',
+'☼ AM / ☽ PM\nWhen to Use: After cleansing\nApplication: Gently wipe a pad over the complexion - avoiding the eye area. Allow to dry before continuing rest of the skincare regime.',
+'Salicylic Acid: A BHA that helps visibly clear blocked pores and refine texture\nGlycerin: A humectant that seeks to maintain moisture levels\nAllantoin: A compound with skin-protecting, hydrating and soothing properties',
+'Aqua (Water), Cocamidopropyl Dimethylamine, Salicylic Acid, Glycerin, Phenoxyethanol, Allantoin, Sodium Hydroxide, Ethylhexylglycerin, Mentha Viridis (Spearmint) Leaf Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil, Limonene',
+'{ACNE_BLEMISHES,COMBINATION_SKIN,OILY_SKIN}',
+'2025-05-28 02:17:36.622',
+452, false),
+
+-- 3
+('ca451915-d3fc-44aa-a6d1-407d76ec64fb',
+'https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/13674764-1255029122209082.jpg&format=webp&auto=avif&width=640&height=640&fit=crop',
+'{}',
+'COSRX Master Patch Intensive (36 Pack)',
+13.99, 'POUND', 0,
+'Diminish the look of blemishes and breakouts with COSRX Master Patch Intensive. The transparent spot stickers work overnight to reduce the appearance of redness, while helping to absorb excess oils and protect against the risk of picking. Infused with tea tree oil, the hydrocolloid patches provide a soothing effect on the skin, alongside encouraging a more clarified-looking complexion.',
+'☽ PM\nWhen to Use: After cleansing.\nApplication: Apply gently with the sticky side down. Leave on overnight.',
+NULL,
+'Cellulose Gum, Hydrogenated Poly(C6-20 Olefin), Polyisobutene, Styrene/Isoprene Copolymer, Salicylic Acid, Melaleuca Alternifolia (TeaTree) Leaf Oil',
+'{ACNE_BLEMISHES}',
+'2025-05-28 02:17:39.559',
+403, false),
+
+-- 4
+('fe742804-9d0f-422b-a126-d59f22991e06',
+'https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11316226-1764937426064600.jpg&format=webp&auto=avif&width=640&height=640&fit=crop',
+'{}',
+'Clinique Anti Blemish Solutions All Over Clearing Treatment 50ml',
+22, 'POUND', 0,
+'The Anti-Blemish Solutions All Over Clearing Treatment from Clinique has been expertly formulated by dermatologists to help treat blemishes, acne and breakouts. The lightweight cream works to create a protective barrier against harmful agents that cause skin irritations, whilst injecting skin with a dosage of moisture to minimise dryness and peeling.\nSuitable for daily use as Step 3 of the Anti-Blemish Solutions 3-Step System, the soothing treatment aims to regulate oil levels and limit excess sebum production to prevent further breakouts. The appearance of redness is minimised and you are left with a clear and protected complexion.\nFormerly known as Anti-Blemish Solutions Moisturizer.',
+'Apply thin layer to face AM and PM. If drying or peeling occurs, reduce usage. For best results, use after Anti-Blemish Solutions Cleansing Foam and Clarifying Lotion. After breakout clears, continue using for preventative care.',
+NULL,
+NULL,
+'{ACNE_BLEMISHES,DRY_SKIN,BLACKHEADS_PORES}',
+'2025-05-28 02:18:04.029',
+115, false),
+
+-- 5
+('c2232161-c354-4e9b-bb6e-c46e9d9283d2',
+'https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/11138378-1284945910145708.jpg&format=webp&auto=avif&width=640&height=640&fit=crop',
+'{}',
+'Origins Super Spot Remover Blemish Treatment Gel 10ml',
+18, 'POUND', 0,
+'Banish breakouts with Origins Super Spot Remover Blemish Treatment Gel, a purifying formula ideal for oily and blemish-prone skin. Created using powerhouse ingredients Salicylic Acid and Saw Palmetto, to fight, fade and help prevent blemishes.\nSweeping away toxins, impurities and excess oil from deep within pores, the blemish-fighter helps to create a clean and healthy-looking complexion.\nSuitable for oily and blemish-prone skin.',
+'Apply as and when needed to targeted areas on face.',
+NULL,
+'Salicylic Acid 1.50%, Water\\Aqua\\Eau; Alcohol Denat.; Acrylates/C10-30 Alkyl Acrylate Crosspolymer; Hamamelis Virginiana (Witch Hazel); Eugenia Caryophyllus (Clove) Bud Oil*, Origanum Heracleoticum Flower Oil*, Eugenol, Limonene; Cucumis Sativus (Cucumber) Fruit Extract; Pyrus Malus (Apple) Fruit Extract; Scutellaria Baicalensis Root Extract; Algae Extract; Poria Cocos Sclerotium Extract; Laminaria Saccharina Extract; Lactobacillus Ferment; Glycerin; Caffeine; Butylene Glycol; Tocopheryl Acetate; Magnesium Ascorbyl Phosphate; Sodium Hydroxide; Phenoxyethanol <Iln37864>.',
+'{ACNE_BLEMISHES,OILY_SKIN,BLACKHEADS_PORES}',
+'2025-05-28 02:17:43.642',
+343, false);
+-- RETURNING id INTO list_product_ids;
