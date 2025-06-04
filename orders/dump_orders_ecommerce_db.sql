@@ -19,7 +19,7 @@ DECLARE
   random_date DATE;
 BEGIN
   -- 1. Try to get a user ID
-  SELECT id INTO var_user_id FROM "user" LIMIT 1;
+  SELECT id INTO var_user_id FROM "user" WHERE "role"='USER' LIMIT 1;
 
   -- 2. If not exists, create one
   IF var_user_id IS NULL THEN
@@ -55,7 +55,7 @@ BEGIN
     FOR number_records IN 1..5 LOOP -- 5 orders per status
       -- Generate random date
       random_year := 2022 + floor(random() * 4)::INT;
-      random_month := 1 + floor(random() * 12)::INT;
+      random_month := 1 + floor(random() * 6)::INT;
       random_day := 1 + floor(random() * 28)::INT;
       random_date := make_date(random_year, random_month, random_day);
 
@@ -66,7 +66,9 @@ BEGIN
         id, user_id, shipping_address_id, status, total_amount, total_discount,
         shipping_fee, final_amount, payment_method, payment_status, payment_date
       ) VALUES (
-        uuid_generate_v4(), var_user_id, var_shipping_address_id, statuses[i]::"OrderStatus",
+        uuid_generate_v4(), var_user_id, var_shipping_address_id, 
+        -- statuses[i]::"OrderStatus",
+        'DELIVERED',
         0, 0, 0, 0, 'COD', 'PAID', random_date
       ) RETURNING id INTO var_order_id;
 
