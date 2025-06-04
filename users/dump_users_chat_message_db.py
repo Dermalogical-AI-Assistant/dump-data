@@ -12,6 +12,18 @@ def days_ago(n):
 # Users created THIS MONTH
 users_this_month = [
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998cccd',
+        "name": "Jasmine Tran",
+        "avatar": 'https://res-console.cloudinary.com/dyw50hhip/thumbnails/v1/image/upload/v1740292946/SmFzbWluZS0zX3BzcGg2Yw==/preview',
+        "email": "jasminebkdn@gmail.com",
+        "location": "Vietnam",
+        "date_of_birth": datetime(2002, 7, 5),
+        "gender": "FEMALE",
+        "role": "ADMIN",
+        "created_at": days_ago(2),
+    },
+    {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc0',
         "name": "Alice Now",
         "avatar": None,
         "email": "alice.now@example.com",
@@ -22,6 +34,7 @@ users_this_month = [
         "created_at": days_ago(2),
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc1',
         "name": "Bob Now",
         "avatar": None,
         "email": "bob.now@example.com",
@@ -32,6 +45,7 @@ users_this_month = [
         "created_at": days_ago(5),
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc2',
         "name": "Cara Now",
         "avatar": None,
         "email": "cara.now@example.com",
@@ -42,6 +56,7 @@ users_this_month = [
         "created_at": days_ago(10),
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc3',
         "name": "David Now",
         "avatar": None,
         "email": "david.now@example.com",
@@ -56,6 +71,7 @@ users_this_month = [
 # Users created LAST MONTH (approximate 30-60 days ago)
 users_last_month = [
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc4',
         "name": "Eva Last",
         "avatar": None,
         "email": "eva.last@example.com",
@@ -66,6 +82,7 @@ users_last_month = [
         "created_at": days_ago(63),  # 2 months + 3 days approx
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc5',
         "name": "Frank Last",
         "avatar": None,
         "email": "frank.last@example.com",
@@ -76,6 +93,7 @@ users_last_month = [
         "created_at": days_ago(67),
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc6',
         "name": "Grace Last",
         "avatar": None,
         "email": "grace.last@example.com",
@@ -90,6 +108,7 @@ users_last_month = [
 # Users created LONG AGO (months/years ago)
 users_long_ago = [
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc7',
         "name": "Henry Old",
         "avatar": None,
         "email": "henry.old@example.com",
@@ -100,6 +119,7 @@ users_long_ago = [
         "created_at": days_ago(180),  # 6 months ago
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc8',
         "name": "Ivy Old",
         "avatar": None,
         "email": "ivy.old@example.com",
@@ -110,6 +130,7 @@ users_long_ago = [
         "created_at": days_ago(270),  # 9 months ago
     },
     {
+        "id": 'dccff7c6-733a-4b19-affa-2e231998ccc9',
         "name": "Jake Old",
         "avatar": None,
         "email": "jake.old@example.com",
@@ -123,6 +144,7 @@ users_long_ago = [
 
 all_users = users_this_month + users_last_month + users_long_ago
 
+users_collection.delete_many({})  # Clear existing users
 result = users_collection.insert_many(all_users)
 
 print(f"Inserted {len(result.inserted_ids)} users.")
