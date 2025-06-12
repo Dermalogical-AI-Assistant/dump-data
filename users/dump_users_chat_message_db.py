@@ -6,6 +6,10 @@ client = MongoClient(DATABASE_URL)
 db = client["chat_session_db"] 
 users_collection = db["User"]
 
+# users_collection.delete_many({})
+# db["ChatSession"].delete_many({})
+# db["ChatMessage"].delete_many({})
+
 def days_ago(n):
     return datetime.now() - timedelta(days=n)
 
@@ -14,7 +18,7 @@ users_this_month = [
     {
         "id": 'dccff7c6-733a-4b19-affa-2e231998cccd',
         "name": "Jasmine Tran",
-        "avatar": 'https://res-console.cloudinary.com/dyw50hhip/thumbnails/v1/image/upload/v1740292946/SmFzbWluZS0zX3BzcGg2Yw==/preview',
+        "avatar": 'https://res-console.cloudinary.com/dyw50hhip/thumbnails/v1/image/upload/v1740292946/SmFzbWluZS0zX3BzcGg2Yw==/drilldown',
         "email": "jasminebkdn@gmail.com",
         "location": "Vietnam",
         "date_of_birth": datetime(2002, 7, 5),

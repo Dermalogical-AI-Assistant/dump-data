@@ -1,6 +1,6 @@
 -- Users ADMIN
 INSERT INTO "user" (id, name, avatar, phone, email, location, date_of_birth, gender, password, role, created_at) VALUES
-('dccff7c6-733a-4b19-affa-2e231998cccd', 'Jasmine Tran', 'https://res-console.cloudinary.com/dyw50hhip/thumbnails/v1/image/upload/v1740292946/SmFzbWluZS0zX3BzcGg2Yw==/preview', '0934853507', 'jasminebkdn@gmail.com', 'Vietnam', '2002-07-05', 'FEMALE', '$2b$10$dBWjyAPt9LkEE5rsCgbhau4wL8SEIiliwPNR36VUsBrKTYjQkB.6W', 'ADMIN', now() - interval '2 day');
+('dccff7c6-733a-4b19-affa-2e231998cccd', 'Jasmine Tran', 'https://res-console.cloudinary.com/dyw50hhip/thumbnails/v1/image/upload/v1740292946/SmFzbWluZS0zX3BzcGg2Yw==/drilldown', '0934853507', 'jasminebkdn@gmail.com', 'Vietnam', '2002-07-05', 'FEMALE', '$2b$10$dBWjyAPt9LkEE5rsCgbhau4wL8SEIiliwPNR36VUsBrKTYjQkB.6W', 'ADMIN', now() - interval '2 day');
 
 -- Users created THIS MONTH
 INSERT INTO "user" (id, name, avatar, phone, email, location, date_of_birth, gender, password, role, created_at) VALUES
